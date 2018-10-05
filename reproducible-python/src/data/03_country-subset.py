@@ -41,6 +41,13 @@ def get_country(filename, country):
     return(fname)
 
 
+def get_mean_price(filename):
+    """ function to get the mean price of the wines
+    rounded to 4 decimals"""
+    wine = pd.read_csv(filename)
+    mean_price = wine['price'].mean()
+    return round(mean_price, 4)
+
 if __name__ == '__main__':
     filename = sys.argv[1]
     country = sys.argv[2]

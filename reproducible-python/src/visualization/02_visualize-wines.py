@@ -7,6 +7,7 @@ wines distribution using a subset data
 import sys
 import datetime
 
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -60,6 +61,7 @@ def plot_distribution(wine):
         fig.savefig(fname, bbox_inches='tight')
 
     return (fname)
+
 
 
 def plot_scatter(wine):
